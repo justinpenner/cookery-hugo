@@ -1,0 +1,503 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+/* CONSTANTS //
+Page padding and gutters: 4vw
+Section padding: 5vw
+
+COLOURS (WCAG contrast rating against black text)
+e37164 = red (AA)
+ef98b1 = pink (AAA)
+f49e0d = orange (AAA)
+f1c273 = light orange (AAA)
+ffd701 = yellow (AAA)
+fff0b3 = light yellow (AAA)
+bddca5 = mint (AAA)
+248491 = dark teal (AA)
+50b5c6 = teal (AAA)
+9d5b87 = light purple (AA Large)
+71306d = purple (None)
+
+*/
+
+ /* GLOBAL */
+body {
+	font-family: Plantin;
+	font-size: 16px;
+	font-variant-numeric: oldstyle-nums;
+
+	padding: 0; /*calc(18vw + 8vmin) 0 0 0;*/
+	margin: 0;
+	color: #111;
+	line-height: 1.2em;
+}
+a, a:active, a:focus {
+	outline: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	color: black;
+	text-decoration: underline;
+}
+a h1, a h2, #list-posts a {
+	text-decoration: none;
+}
+em, i {
+	font-family: Plantin-Italic;
+}
+strong, b {
+	font-family: Plantin-Bold;
+}
+p {
+	margin-top: 1rem;
+	line-height: 1.4em;
+}
+p + p {
+	margin-top: .6rem;
+}
+p:first-child {
+	margin-top: 0;
+}
+ul, ol {
+	margin-top: .6rem;
+}
+li {
+	margin-bottom: .4rem;
+}
+li:last-child {
+	margin-bottom: 0;
+}
+ol {
+	list-style: decimal;
+	padding-left: 1.5em;
+}
+img, figure {
+	display: block;
+	width: 100%;
+	margin-top: 1rem;
+}
+img:first-child, figure:first-child {
+	/*margin-top: 0;*/
+}
+figcaption {
+	/*font-family: Plantin-Italic;*/
+	font-size: .9rem;
+	text-align: right;
+	margin-top: .3rem;
+}
+figcaption em {
+	/*font-family: Plantin;*/
+}
+.visually-hidden {
+	display: none;
+}
+.credit {
+	font-size: .9rem;
+}
+
+ /* HEADER & NAVIGATION  */
+#header {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	padding: 4vmin 4vw;
+	box-sizing: border-box;
+	width: 100%;
+}
+#header-wrapper {
+	/*transition: transform 0.2s ease-in-out;*/
+	/*position: fixed;*/
+	/*top: 0;*/
+	/*z-index: 9999;*/
+	width: 100%;
+	/*margin-bottom: -.5rem;*/
+}
+#header-wrapper.nav-up {
+	transform: translateY(-18vw) translateY(-8vmin);
+}
+#header-wrapper.nav-down {
+	transform: translateY(0);
+}
+#header .logo {
+	vertical-align: middle;
+	width: unset;
+	display: inline;
+	float: left;
+	margin-top: 0;
+	height: 16vw;
+	/*max-height: 20vmin;*/
+	line-height: 0;
+	font-size: 0;
+}
+footer .logo {
+	width: unset;
+	height: 8vmax;
+}
+svg:not(:root) {
+	/*border: 1px solid blue;*/
+	height: 10vw;
+	padding: 2vw 0;
+	float: right;
+}
+#hamburger {
+	transition: transform .2s;
+}
+#hamburger.active {
+	transform: rotate(-90deg);
+	transition: transform .2s;
+}
+#hamburger-link {
+	display: block;
+	padding: 1vw 0;
+	height: 14vw;
+	max-height: 20vmin;
+	vertical-align: middle;
+}
+#menu.active {
+	display: block;
+}
+#menu {
+	display: none;
+	width: 50%;
+	margin: 0 0 0 auto;
+	padding: 2vw;
+	font-family: Plantin-Bold;
+	font-size: 1.3rem;
+	grid-column: 1 / span 2;
+}
+#menu li {
+	margin-top: 1em;
+}
+#menu a {
+	color: white;
+	text-decoration: none;
+}
+.page-margin {
+	padding: 4vw;
+}
+.page-margin > * {
+	margin-top: 4vw;	
+}
+.page-margin > *:first-child, #list-posts > a:first-child > article {
+	margin-top: 0;
+}
+#list-posts.page-margin {
+	padding: 0;
+}
+#list-posts > a > article {
+	margin: 0;
+}
+#list-posts section.intro {
+	background-color: inherit;
+	margin: 1.5rem 0 2rem 0;
+	padding: 1.5vw 2vw;
+}
+
+/* TITLE & INTRO */
+h1 {
+	display: block;
+	font-family: Plantin-Italic;
+	font-variant-numeric: lining-nums;
+	text-transform: uppercase;
+	letter-spacing: 2pt;
+	font-size: 1.5rem;
+	line-height: 1.1em;
+}
+article header, article section, #list-posts article {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5vw;
+}
+article header p.intro {
+	margin-top: 1rem;
+	font-family: Plantin-Italic;
+	font-size: 1.2em;
+}
+#hero {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+/* REVIEW */
+aside.illustration img {
+	width: 40%;
+	margin: 2rem auto;
+	mix-blend-mode: multiply;
+}
+h2 {
+	font-family: Plantin-Bold;
+	font-variant-numeric: lining-nums;
+	text-transform: uppercase;
+	letter-spacing: 1pt;
+	font-size: 1.3rem;
+	line-height: 1.2em;
+	/*padding-bottom: 1rem;*/
+	margin-top: 1rem;
+}
+h2:first-child {
+	margin-top: 0;
+}
+h3 {
+	font-family: Plantin-Bold;
+	font-variant-numeric: lining-nums;
+	font-size: 1.1rem;
+	line-height: 1.2em;
+	margin-top: 1rem;
+}
+h3:first-child {
+	margin-top: 0;
+}
+
+/* RECIPE */
+ul.ingredients {
+	font-family: Plantin-Italic;
+}
+.ingredients-note p, .method-note p {
+	font-family: Plantin-Italic;
+	font-size: .9rem;
+	margin-top: .6rem;
+}
+article .byline {
+	font-size: .9rem;
+	/*margin-bottom: 1rem;*/
+}
+.byline time, .byline address {
+	display: inline;
+}
+aside {
+	/*margin: 1rem 0;*/
+}
+.tip {
+	margin-top: .3rem;
+	font-size: .9rem;
+	/*font-family: Plantin-Italic;*/
+}
+#original-recipe {
+	display: none;
+}
+#original-recipe.show {
+	display: block;
+}
+aside.pattern {
+	height: 10rem;
+}
+
+/* ABOUT PAGE */
+.inscription {
+	font-family: Plantin-Italic;
+	font-size: 1.2em;
+	padding-left: 50%;
+	padding-top: 1em;
+}
+
+/* COMMENTS */
+.comment-credit {
+	font-family: Plantin-Italic;
+	font-size: .9em;
+	margin-top: .6rem;
+}
+.hiddenFields {
+	display: none;
+}
+#comment_form {
+	margin-top: 1rem;
+	/*display: grid;*/
+	/*grid-template-columns: 1fr;*/
+	/*grid-row-gap: .6rem;*/
+}
+
+/* FORMS */
+input, textarea {
+	display: block;
+	border: 0;
+	padding: .3rem;
+	font-family: Plantin;
+	font-size: 1rem;
+	width: 100%;
+	box-sizing: border-box;
+}
+label {
+	display: block;
+	font-family: Plantin;
+	font-size: 1rem;
+	text-align: left;
+}
+input[type=submit] {
+	border: 1px solid #111;
+	font-family: Plantin-Bold;
+	margin-top: 1rem;
+	background-color: rgb(0,0,0,.08);
+	width: unset;
+}
+label > input {
+	display: inline;
+	width: unset;
+}
+label.checkbox {
+	margin: 1rem 0;
+}
+.captcha img {
+	width: inherit;
+	margin: 0 0 .3rem 0;
+}
+
+/* FOOTER */
+footer {
+	padding: 5vw;
+	font-variant-numeric: lining-nums;
+}
+
+/* RECIPE INDEX */
+#recipe-index section > a {
+	grid-template-columns: 2.5em auto;
+	grid-column-gap: 1em;
+	display: grid;
+	margin-top: .5em;
+	text-decoration: none;
+}
+#recipe-index section > a:first-of-type {
+	margin-top: 1em;
+	font-family: Plantin-Bold;
+}
+#recipe-index section > a > *:first-child {
+	text-align: right;
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 550px) {
+	#header .logo {
+		height: 18vw;
+		max-height: 16vmin;
+	}
+	#hamburger-link {
+		max-height: 12vmin;
+	}
+	svg:not(:root) {
+		height: 10vw;
+		max-height: 8vmin;
+	}
+	.page-margin > * {
+		margin-top: 2rem;
+	}
+	.page-margin > *:first-child {
+		margin-top: 0;
+	}
+	aside {
+		margin: 2rem 0;
+	}
+	aside.illustration img {
+		margin: 6rem auto;
+	}
+	article section.recipe ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media only screen and (min-width: 850px) {
+	body {
+		font-size: 18px;
+	}
+	#header-wrapper {
+		width: 100%;
+	}
+	#header {
+		padding: 1rem 0;
+		grid-template-columns: 2fr 3fr;
+	}
+	#header .logo {
+		height: 5rem;
+		max-height: 5rem;
+		padding-left: .7rem;
+	}
+	footer .logo {
+		height: 5rem;
+		margin-bottom: 1rem;
+	}
+	#hamburger-link {
+		display: none;
+		/*max-height: 5rem;*/
+		/*height: 5rem;*/
+	}
+	svg:not(:root) {
+		height: 4rem;
+		max-height: 5rem;
+		padding: 0;
+	}
+	#menu {
+		display: block;
+		grid-column: 2;
+		padding: 1.9rem 0 0 0;
+		margin: 0;
+		width: 100%;
+	}
+	#menu ul {
+		margin: 0;
+		/*display: grid;*/
+		/*grid-template-rows: 2fr 1fr 2fr;*/
+	}
+	#menu ul li {
+		display: inline;
+		padding-right: 2rem;
+	}
+	#menu ul li:first-child {
+		/*margin-top: 0;*/
+	}
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		margin-top: 1.5rem;
+		font-size: 1.7em;
+	}
+	h2:first-of-type {
+		margin-top: 0rem;
+	}
+	h3 {
+		font-size: 1.2em;
+	}
+	main {
+		background-image: url('../images/dots-4.svg');
+	}
+	#header, main > *, footer > * {
+		max-width: 900px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	.page-margin, #hero {
+		box-sizing: border-box;
+		padding: 2rem 3rem 0 3rem;
+	}
+	.page-margin:last-child {
+		padding-bottom: 3rem;
+	}
+	article header, article section, article aside {
+		padding: 0 3rem;
+		padding: 2rem 3rem;
+		margin-top: 3rem;
+	}
+	#list-posts > a {
+		display: block;
+		margin-bottom: 3rem;
+	}
+	#list-posts > a:last-child {
+		margin-bottom: 0;
+	}
+	#list-posts > a > article {
+		padding: 2rem 3rem 3rem 3rem;
+	}
+	#list-posts p.intro {
+		padding: 1rem 2rem;
+	}
+	article header p.intro {
+		font-size: 1.5em;
+	}
+}

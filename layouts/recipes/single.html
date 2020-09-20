@@ -1,0 +1,90 @@
+{{ define "structuredData"}}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org/",
+	"@type": "Recipe",
+	"name": "{{ .Title }}",
+	"author": "{{ .Site.Params.author }}",
+	"image": "{{ .Params.hero }}",
+	"description": "{{ .Summary }}",
+	"prepTime": "{{ .Params.recipePrepTime }}",
+	"cookTime": "{{ .Params.recipeCookTime }}",
+	"totalTime": "{{ .Params.recipeTotalTime }}",
+	"recipeYield": "{{ .Params.recipeYield }}",
+	"recipeCategory": "{{ .Params.recipeCategory }}",
+	"recipeCuisine": "{{ .Params.recipeCuisine }}",
+	"recipeIngredient": 
+{{- .Params.recipeIngredients | jsonify (dict "prefix" "" "indent" "		") | safeJS }},
+	"recipeInstructions": 
+{{- .Params.recipeMethod | jsonify (dict "prefix" "" "indent" "		") | safeJS }}
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+	<main>
+		<article>
+			<div class="page-margin">
+				<header style="background-image: url('/patterns/{{ .Params.pattern }}');">
+					<h1>{{ .Title }}</h1>
+				</header>
+			</div>
+			<img id="hero" src="{{ .Params.hero }}" class="no-margin">
+
+			<div class="page-margin">
+				<section class="review">
+					{{ .Content }}
+				</section>
+				<aside class="illustration">
+					<img src="/woodcuts/{{ .Params.woodcut }}">
+				</aside>
+				<section class="recipe">
+					<h2>Recipe</h2>
+					<h3>{{ .Params.index }}&emsp;{{ .Title }}</h3>
+					<figure>
+						<img src="{{ .Params.dishScan }}">
+						<figcaption>1960 photo from <em><a href="">Cookery in Colour</a></em></figcaption>
+					</figure>
+					<h3>Ingredients</h3>
+					<ul class="ingredients">
+{{- range .Params.recipeIngredients }}
+						<li>{{ . }}</li>
+{{- end }}
+					</ul>
+					<div class="ingredients-note">
+						{{ .Params.recipeIngredientsNote | markdownify }}
+					</div>
+					<h3>Directions</h3>
+					<ol class="method">
+{{- range .Params.recipeMethod }}
+						<li>{{ . }}</li>
+{{- end }}
+					<div class="method-note">
+						{{ .Params.recipeMethodNote | markdownify }}
+					</div>
+					</ol>
+					<p>Recipe adapted from <em>Cookery in Colour</em> (1960)</p>
+					› <a href="javascript:void();" onclick="tipToggle('original-recipe')">See the original 1960 recipe</a>
+					<div id="original-recipe">
+						<img src="{{ .Params.recipeScan }}">
+					</div>
+				</section>
+				<section class="byline">
+					<div>
+						Posted <time pubdate datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time> by <address class="author">{{ .Site.Params.author }}</address>.
+					</div>
+				</section>
+				<aside class="pattern" style="background-image: url('/patterns/{{ .Params.pattern }}');"></aside>
+				<section class="comments">
+					<script>
+						var idcomments_acct = '5928a205560df3464d38492d76924c53';
+						var idcomments_post_id;
+						var idcomments_post_url;
+					</script>
+					<span id="IDCommentsPostTitle" style="display:none"></span>
+					<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+				</section>
+			</div>
+		</article>
+	</main>
+{{ end }}

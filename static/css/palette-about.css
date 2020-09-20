@@ -1,0 +1,17 @@
+body, #header-wrapper, footer {
+	background-color: #f1c273;
+}
+.page-margin {
+	background-color: #71306d;
+}
+article header {
+	background-color: #ffd701;
+}
+article section {
+	background-color: #fff0b3;
+}
+@media only screen and (min-width: 800px) {
+	main {
+		background: #71306d url('../images/dots-4.svg') repeat;
+	}
+}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+	<main>
+		<article id="recipe-index">
+			<div class="page-margin">
+				<header style="background-image: url('/patterns/{{ .Params.pattern }}');">
+					<h1>Recipe Index</h1>
+				</header>
+				<section>
+					<h2>Completed Recipes</h2>
+					<p>Track my progress as I attempt to cook all 1,086 recipes in Margeurite Patten’s 1960 classic, <em>Cookery in Colour</em>. I’ve completed {{ len .Pages }} so far.</p>
+					<a href="">
+						<div>#</div>
+						<div>Recipe</div>
+					</a>
+{{- range .Pages.ByParam "index"}}
+					<a href="{{ .Permalink }}">
+						<div>{{ .Params.index }}</div>
+						<div>{{ .Title }}</div>
+					</a>
+{{- end }}
+				</section>
+			</div>
+		</article>
+	</main>
+{{ end }}

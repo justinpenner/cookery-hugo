@@ -1,0 +1,15 @@
+	{{ range .Site.RegularPages }}
+	<article>
+		{{ if .Params.hero }}<img src="{{ .RelPermalink }}/{{ .Params.hero }}">{{ end }}
+		<a href="{{.RelPermalink}}">{{.Title}}</a>
+		<p>{{.Params.desc}}</p>
+		{{ if .Params.tags }}
+		<p>
+			Filed under:
+			{{ range (.GetTerms "tags") }}
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			{{ end }}
+		</p>
+		{{ end}}
+	</article>
+	{{ end }}

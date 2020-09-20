@@ -1,0 +1,24 @@
+{{ define "main" }}
+	<main>
+		<article>
+			<div class="page-margin">
+				<header style="background-image: url('/patterns/{{ .Params.pattern }}');">
+					<h1>{{ .Title }}</h1>
+				</header>
+			</div>
+	{{- if .Params.hero }}
+			<img id="hero" src="{{ .Params.hero }}" class="no-margin">
+	{{- end }}
+
+			<div class="page-margin">
+				<section>
+					{{ .Content }}
+					<aside class="illustration">
+						<img src="/woodcuts/{{ .Params.woodcut }}">
+					</aside>
+				</section>
+				<aside class="pattern" style="background-image: url('/patterns/{{ .Params.pattern }}');"></aside>
+			</div>
+		</article>
+	</main>
+{{ end }}

@@ -1,0 +1,21 @@
+{{ define "main" }}
+	<main>
+		<div id="list-posts" class="page-margin">
+
+	{{- range .Sections }}
+		{{- range .Pages }}
+			<a href="{{ .Permalink }}">
+				<article class="bg-{{ .Params.colourway }}" style="background-image: url('/patterns/{{ .Params.pattern }}');">
+					<h1>{{ .Title }}</h1>
+					<img src="{{ .Permalink }}/{{ .Params.hero }}">
+					<section class="intro">
+						<p class="intro">{{ .Summary }}</p>
+					</section>
+					<p>Posted {{ .Date.Format "January 2, 2006" }}</p>
+				</article>
+			</a>
+		{{- end }}
+	{{- end }}
+		</div>
+	</main>
+{{ end }}

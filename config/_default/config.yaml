@@ -1,0 +1,37 @@
+params:
+  description: "Retro recipes and reviews, inspired by a colourful mid-century cookbook found in a thrift shop."
+  author: Carla
+languageCode: en-ca
+title: Cookery in Carla
+taxonomies:
+  categories: categories
+buildDrafts: false
+publishDir: public
+enableInlineShortcodes: true
+markup:
+  tableOfContents:
+    endLevel: 3
+    ordered: true
+    startLevel: 2
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xHTML: false
+frontmatter:
+  date: ["date", "publishDate", "lastmod", ":fileModTime"]
+  lastmod: [":git", ":fileModTime", "lastmod", "date", "publishDate"]
+  publishDate: ["publishDate", "date", ":fileModTime"]
+  expiryDate: ["expiryDate"]

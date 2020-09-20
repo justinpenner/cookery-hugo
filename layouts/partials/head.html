@@ -1,0 +1,29 @@
+<head>
+	<meta charset="utf-8">
+	<title>{{ .Title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+{{ template "_internal/opengraph.html" . }}
+{{ block "structuredData" . }}{{ end }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/google_analytics_async.html" . }}
+
+{{- if .Params.unlisted }}
+	<meta name="robots" content="noindex">
+{{- end }}
+	<!-- Twitter META tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<!-- Chrome, Firefox OS and Opera / Windows Phone / iOS Safari -->
+	<meta name="theme-color" content="#333333">
+	<meta name="msapplication-navbutton-color" content="#333333">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#333333">
+
+	<link rel="icon" href="/favicon.png">
+
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/styles.css?d={{ now.Unix }}">
+	<link rel="stylesheet" href="/css/palette-home.css">
+{{- if .Params.colourway }}
+	<link rel="stylesheet" href="/css/palette-{{ .Params.colourway }}.css">
+{{- end }}
+</head>

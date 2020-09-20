@@ -1,0 +1,41 @@
+[build]
+  publish = "public"
+  command = "hugo"
+
+[build.environment]
+  HUGO_VERSION = "0.70.0"
+
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
+
+  [plugins.inputs]
+    # If it should show more verbose logs (optional, default = true)
+    debug = true
+
+[[redirects]]
+  from = "/work"
+  to = "/"
+[[redirects]]
+  from = "/work/igneo"
+  to = "/branding/igneo"
+[[redirects]]
+  from = "/work/abbotsford-airport"
+  to = "/branding/abbotsford-airport"
+[[redirects]]
+  from = "/work/36-days"
+  to = "/fonts/36-days-of-type"
+[[redirects]]
+  from = "/work/kabella"
+  to = "/fonts/kabella"
+[[redirects]]
+  from = "/project/kabella"
+  to = "/fonts/kabella"
+[[redirects]]
+  from = "/work/mexico-68"
+  to = "/editorial/mexico-68"
+[[redirects]]
+  from = "/work/cube"
+  to = "/branding/cube"
+[[redirects]]
+  from = "/about"
+  to = "/"

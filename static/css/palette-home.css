@@ -1,0 +1,42 @@
+body, #header-wrapper, footer {
+	background-color: #bddca5; /*light green*/
+}
+article {
+	background-color: #fff0b3; /*light yellow*/
+}
+.bg-1 {
+	background-color: #ffd701;
+}
+.bg-2 {
+	background-color: #ef98b1;
+}
+.bg-3 {
+	background-color: #f49e0d;
+}
+.bg-4 {
+	background-color: #c0ce43;
+}
+.bg-5 {
+	background-color: #ffd701;
+}
+.bg-6 {
+	background-color: #c0ce43;
+}
+.bg-7 {
+	background-color: #c0ce43;
+}
+.bg-8 {
+	background-color: #f49e0d;
+}
+.bg-9 {
+	background-color: #c0ce43;
+}
+.bg-10 {
+	background-color: #ffd701;
+}
+
+@media only screen and (min-width: 800px) {
+	main {
+		background: #bddca5 url('../images/dots-4.svg') repeat;
+	}
+}

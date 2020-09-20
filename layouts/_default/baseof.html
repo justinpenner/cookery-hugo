@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{{ .Title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+{{- template "_internal/opengraph.html" . }}
+{{- block "structuredData" . }}{{ end }}
+{{- template "_internal/twitter_cards.html" . }}
+{{- template "_internal/google_analytics_async.html" . }}
+
+{{- if .Params.unlisted }}
+	<meta name="robots" content="noindex">
+{{- end }}
+	<!-- Twitter META tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<!-- Chrome, Firefox OS and Opera / Windows Phone / iOS Safari -->
+	<meta name="theme-color" content="#333333">
+	<meta name="msapplication-navbutton-color" content="#333333">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#333333">
+
+	<link rel="icon" href="/favicon.png">
+
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/styles.css?d={{ now.Unix }}">
+	<link rel="stylesheet" href="/css/palette-home.css">
+{{- if .Params.colourway }}
+	<link rel="stylesheet" href="/css/palette-{{ .Params.colourway }}.css">
+{{- end }}
+</head>
+<body>
+{{ block "body" . }}
+
+	{{- block "nav" . }}
+		{{- partial "nav.html" . }}
+	{{ end }}
+
+	{{ block "main" . }}
+	<main>
+		<article>
+			{{ .Content }}
+		</article>
+	</main>
+	{{- end }}
+
+	{{- block "footer" . }}
+	<footer>
+		<p><a href="/"><img src="/logo.svg" class="logo"></a></p>
+		<p>&copy; 2019 Cookery in Carla</p>
+		<p><a href="https://www.pinterest.ca/cookeryincarla/" target="_blank">Pinterest</a></p>
+		<p><a href="https://www.instagram.com/cookeryincarla/" target="_blank">Instagram</a></p>
+		<p>Lovingly designed and built by <a href="http://justinpenner.ca">Justin Penner</a>. Type set in Plantin.</p>
+	</footer>
+	{{ end }}
+
+{{ end }}
+	<style>
+		body {
+			/*widow-adjust: padding-left;*/
+			hanging-punctuation: first;
+		}
+	</style>
+	<script src="/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+</html>

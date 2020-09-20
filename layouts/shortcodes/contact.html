@@ -1,0 +1,23 @@
+			<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+				<p>
+					<label for="name">Your Name:</label>
+					<input type="text" name="name">
+				</p>
+				<p>
+					<label for="from">Your Email:</label>
+					<input type="text" name="from" value="">
+				</p>
+				<p>
+					<label for="subject">Subject:</label>
+					<input type="text" name="subject" value="">
+				</p>
+				<p>
+					<label for="message">Message:</label>
+					<textarea name="message" rows="12">
+					</textarea>
+				</p>
+				<p><div data-netlify-recaptcha="true"></div></p>
+				<p>
+					<input name="submit" type='submit' value='Submit Form'>
+				</p>
+			</form>

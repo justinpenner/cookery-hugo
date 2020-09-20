@@ -1,0 +1,12 @@
+body, #header-wrapper, footer {
+	background-color: #bddca5;
+}
+article, main {
+	background-color: #248491;
+}
+article header {
+	background-color: #e37164;
+}
+article section {
+	background-color: #ef98b1;
+}

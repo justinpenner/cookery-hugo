@@ -1,0 +1,31 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * plantin:
+ *   - http://typekit.com/eulas/00000000000000003b9b208a
+ *   - http://typekit.com/eulas/00000000000000003b9b208c
+ *   - http://typekit.com/eulas/00000000000000003b9b208f
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-02-19 23:59:28 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=eha6auj&ht=tk&f=39562.39564.39567&a=5185457&app=typekit&e=css");
+
+@font-face {
+	font-family:"Plantin-Bold";
+	src:url("https://use.typekit.net/af/f0c5ad/00000000000000003b9b208a/27/l?primer=51e46510a8bcdb92fa139186fdd3d43fc0ac4348ee92477ba51cd46504e98815&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/f0c5ad/00000000000000003b9b208a/27/d?primer=51e46510a8bcdb92fa139186fdd3d43fc0ac4348ee92477ba51cd46504e98815&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/f0c5ad/00000000000000003b9b208a/27/a?primer=51e46510a8bcdb92fa139186fdd3d43fc0ac4348ee92477ba51cd46504e98815&fvd=n7&v=3") format("opentype");
+}
+
+@font-face {
+	font-family:"Plantin-Italic";
+	src:url("https://use.typekit.net/af/ccf32e/00000000000000003b9b208c/27/l?primer=51e46510a8bcdb92fa139186fdd3d43fc0ac4348ee92477ba51cd46504e98815&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/ccf32e/00000000000000003b9b208c/27/d?primer=51e46510a8bcdb92fa139186fdd3d43fc0ac4348ee92477ba51cd46504e98815&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/ccf32e/00000000000000003b9b208c/27/a?primer=51e46510a8bcdb92fa139186fdd3d43fc0ac4348ee92477ba51cd46504e98815&fvd=i4&v=3") format("opentype");
+}
+
+@font-face {
+	font-family:"Plantin";
+	src:url("https://use.typekit.net/af/76b2b8/00000000000000003b9b208f/27/l?primer=51e46510a8bcdb92fa139186fdd3d43fc0ac4348ee92477ba51cd46504e98815&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/76b2b8/00000000000000003b9b208f/27/d?primer=51e46510a8bcdb92fa139186fdd3d43fc0ac4348ee92477ba51cd46504e98815&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/76b2b8/00000000000000003b9b208f/27/a?primer=51e46510a8bcdb92fa139186fdd3d43fc0ac4348ee92477ba51cd46504e98815&fvd=n4&v=3") format("opentype");
+}
