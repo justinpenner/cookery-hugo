@@ -21,16 +21,16 @@ recipeCategory: Television Snacks & Sandwiches
 recipeCuisine: Mid-century English
 keywords: scones, vintage recipe, vintage snack
 recipeIngredients:
-  - 12 oz. self-raising flour "
-  - \u00bc level teaspoon salt"
-  - "milk and or water to mix"
-  - "1 \u00bd butter or margarine"
-  - "4oz finely minced lean ham"
-  - "\u00bd level teaspoon mixed herbs"
-  - "8oz cream cheese"
-  - "1 tomato"
-  - "parsley sprigs"
-  - "stuffed olives"
+  - 12 oz. self-raising flour
+  - ¼ level teaspoon salt
+  - milk and or water to mix
+  - 1 ½ butter or margarine
+  - 4oz finely minced lean ham
+  - ½ level teaspoon mixed herbs
+  - 8oz cream cheese
+  - 1 tomato
+  - parsley sprigs
+  - stuffed olives
 recipeMethod:
   - Sift flour and salt in a bowl. Rub in the butter, add ham and herbs and mix to a soft, but not sticky, dough. Add liquid as needed.
   - Turn out on to a floured board and knead briefly.
@@ -64,8 +64,8 @@ The most annoying thing about this recipe was the decorating. I decided to do th
 
 The final product looked suspiciously ‘festive’ with all the bright red, white and green…. looking back at the original photo, I did spy some tinsel and mini-trees! Turns out this is actually a Christmas recipe they’ve tried to pass off as a ‘Television Snack.’
 
-The final product looks suspiciously christmassy in full colour!
-The final product looks suspiciously christmassy in full colour!
+![](cover.jpg "The final product looks suspiciously christmassy in full colour!")
+
 People seemed to like the scones, although I only thought they were OK. The recipe said “knead quickly,” but I may have taken this step to far, as I was informed the final product was a bit chewy by a friend who shall remain nameless.
 
 And as for the outcome of the party itself?
