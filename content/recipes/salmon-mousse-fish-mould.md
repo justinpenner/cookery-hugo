@@ -3,8 +3,8 @@ index: 82
 title: Salmon Mousse Fish Mould
 hero: cover.jpg
 pattern: dots.svg
-woodcut: egg-beaters.jpg
-colourway: 4
+woodcut: fish-mould.jpg
+colourway: 7
 draft: false
 date: 2019-04-21
 
@@ -71,8 +71,8 @@ Basically, everything gets mixed together and poured into a fish mould. Not surp
 
 I made my mould the night before to give it as much time as possible to set. It worked, but the chunkiness of the mixture meant it lacked a little finesse.
 
-My vintage fish mould, courtesy of a thrift shop
-My vintage fish mould, courtesy of a thrift shop
+![vintage fish mould](fish-mould-final.jpg "My vintage fish mould")
+
 The most annoying part of this dish was the decoration. I followed Marguerite’s instructions exactly: “surround with green pea salad (cooked peas tossed in a French dressing) and garnish with wedges of hard-boiled egg, radish roses and stuffed olives”
 
 Unfortunately, I left this until the last minute so Justin got stuck with some of these tasks.
@@ -83,9 +83,10 @@ Him: “Um… sure?”
 
 We have no idea if he did it correctly, but the results were amazing.
 
-Salmon Mousse is served!
-Salmon mousse is served!
-THE OUTCOME
+![The completed salmon mousse](salmon-mousse-cookery-in-colour-hero-final.jpg "Salmon mousse is served!")
+
+##THE OUTCOME
+
 First bites were shocking. The fish flavour was powerful and was unsettling when combined with the gelatinous texture. The general consensus was that the mousse was OK — once you got used to it.
 
 I took one bite and declared, “I don’t like it!”, but with some encouragement, I carried on and found it to be edible.
