@@ -3,6 +3,7 @@ index: 1080
 title: Busby Biscuits
 hero: cover.jpg
 pattern: wave-grid-1.svg
+woodcut: biscuit-cutters.jpg
 colourway: 3
 draft: false
 date: 2019-02-12

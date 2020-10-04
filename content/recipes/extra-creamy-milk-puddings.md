@@ -23,6 +23,7 @@ recipeIngredients:
   - water
   - 3–3½ oz. washed rice
   - nutmeg
+recipeIngredientsNote: ""
 recipeMethod:
   - Preheat oven to 300˚F.
   - Mix one large can full cream condensed milk with water to make 1¾ pint.
