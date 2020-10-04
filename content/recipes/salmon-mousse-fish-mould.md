@@ -59,7 +59,7 @@ It’s customary to eat fish on Good Friday. I never went to church but growing 
 
 I kept the tradition alive this year, using Good Friday as an excuse to throw a *Cookery in Colour* fish dinner party. 2019 is the year of Salmon Mousse.
 
-##THE PROCESS
+## THE PROCESS
 
 Marguerite gives us the choice of canned or fresh fish for this unique dish. I was doubtful that anyone was going to appreciate this meal either way—so I went with canned.
 
@@ -85,7 +85,7 @@ We have no idea if he did it correctly, but the results were amazing.
 
 ![The completed salmon mousse](salmon-mousse-cookery-in-colour-hero-final.jpg "Salmon mousse is served!")
 
-##THE OUTCOME
+## THE OUTCOME
 
 First bites were shocking. The fish flavour was powerful and was unsettling when combined with the gelatinous texture. The general consensus was that the mousse was OK — once you got used to it.
 
