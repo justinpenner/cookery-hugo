@@ -7,14 +7,14 @@ colourway: 5
 draft: false
 ---
 
-![](inscription.jpg "To dear June, Happy cooking! Much love, Ma. Christmas 1969.")
+![Inscription on inside cover of book](inscription.jpg "To dear June, Happy cooking! Much love, Ma. Christmas 1969.")
 
 
 So reads the inscription inside my copy of Cookery in Colour, a pre-loved edition of the 1960 cookbook edited by British home economist, Marguerite Patten.
 
 Flipping through the pages in my local thrift store, I was immediately taken in by the creative, bright and garish layouts (it’s not called “Cookery in Colour” for nothing). Antiquated language, retro food photography and a range of bizarro recipes sealed the deal — this book was coming home.
 
-![](title-page.jpg "Colourful photos and lettering on the title page of Cookery in Colour.")
+![Cookery in Colour intro page](title-page.jpg "Colourful photos and lettering on the title page of Cookery in Colour.")
 
 The title page is worth 1,000 words in describing exactly what to expect from this cookbook.
 
