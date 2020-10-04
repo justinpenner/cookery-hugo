@@ -7,7 +7,7 @@ colourway: 5
 draft: false
 ---
 
-![](inscription.jpg "To dear June, Happy cooking! Much love, Ma. Christmas 1969.")
+![Inscription on inside cover of book](inscription.jpg "To dear June, Happy cooking! Much love, Ma. Christmas 1969.")
 
 
 So reads the inscription inside my copy of Cookery in Colour, a pre-loved edition of the 1960 cookbook edited by British home economist, Marguerite Patten.
