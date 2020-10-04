@@ -7,7 +7,7 @@
 			<a href="{{ .Permalink }}">
 				<article class="bg-{{ .Params.colourway }}" style="background-image: url('/patterns/{{ .Params.pattern }}');">
 					<h1>{{ .Title }}</h1>
-					<img src="{{ .Permalink }}/{{ .Params.hero }}">
+					<img src="{{ .Permalink }}{{ .Params.hero }}">
 					<section class="intro">
 						<p class="intro">{{ .Summary }}</p>
 					</section>
